@@ -1,17 +1,22 @@
 import React from 'react';
-import imagen from './logotipo.png';
+import imagen from './Assets/logotipo.png';
 import CartWidget from './CartWidget';
+import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
-    <header className='header flex justify-between py-2 px-2 text-white bg-green-800'>
-      <img className='imagen' src={imagen} alt='' style={{ width: '30px' }} />
-      <nav className='flex items-center '>
-        <a href="#" className='nav-link hover:text-green-300 cursor-pointer' >Inicio</a>
-        <a href="#" className='nav-link hover:text-green-300 cursor-pointer'>Productos</a>
-        <a href="#" className='nav-link hover:text-green-300 cursor-pointer'>Contacto</a>
+    <header className='header flex justify-between items-center py-2 px-2 text-white bg-green-800 fixed top-0 left-0 w-full z-50'>
+      <Link to={`/`}>
+        <img className='imagen' src={imagen} alt='' style={{ width: '30px' }} />
+      </Link>
+      <nav className='flex items-center space-x'>
+        <Link to={`/`} className='nav-link hover:text-green-300 cursor-pointer px-4'>Inicio</Link>
+        <Link to={`/category/mates`} className='nav-link hover:text-green-300 cursor-pointer px-4'>Mates</Link>
+        <Link to={`/category/termos`} className='nav-link hover:text-green-300 cursor-pointer px-4'>Termos</Link>
+        <Link to={`/category/materas`} className='nav-link hover:text-green-300 cursor-pointer px-4'>Materas</Link>
         <CartWidget />
       </nav>
+      
     </header>
   );
 }

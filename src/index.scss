@@ -35,3 +35,16 @@ body {
   text-align: center;
   font-family: 'Lemon Milk', sans-serif;
 }
+
+.zoomable-image {
+  transition: transform 0.2s ease-in-out;
+}
+
+.zoomable-image:hover {
+  transform: scale(1.1); /* Cambiar el valor para ajustar el zoom */
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+}
