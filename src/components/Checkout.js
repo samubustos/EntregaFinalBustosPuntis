@@ -67,11 +67,11 @@ const Checkout = () => {
                 setOrderId(orderAdded.id);
                 clearCart();
             } else {
-                setError("Some products are out of stock.");
+                setError("No hay existencias disponibles de algunos productos.");
             }
 
         } catch (error) {
-          setError("An error occurred while processing your order.");
+          setError("Hubo un problema al gestionar tu pedido.");
           console.error(error);
         } finally {
           setLoading(false);

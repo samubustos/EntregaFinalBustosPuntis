@@ -12,7 +12,7 @@ El diseño y la estructura del proyecto están pensados para brindar una experie
 
 Para ejecutar este proyecto en tu máquina local, sigue estos pasos:
 
-1. Clona este repositorio en tu máquina local: [Enlace al Repositorio](https://github.com/TuUsuario/NombreDelRepositorio)
+1. Clona este repositorio en tu máquina local: [Enlace al Repositorio](https://github.com/samubustos/EntregaFinalBustosPuntis)
 
 2. Instala las dependencias del proyecto utilizando npm o yarn:
 
