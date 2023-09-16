@@ -80,9 +80,11 @@ const Checkout = () => {
     
 
     if(loading){
-        return <div className="flex flex-col justify-center items-center">
+        return <div className="center-container">
+          <div className="flex flex-col justify-center items-center">
             <h1 className="mb-2 font-semibold text-green-800">Procesando...</h1>
             <ClipLoader size={50} color={'#018306'} loading={loading} className="mb-20" />
+        </div>
         </div>
     }
 
