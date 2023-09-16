@@ -23,20 +23,20 @@ Para ejecutar este proyecto en tu máquina local, sigue estos pasos:
 
 3. Configura y crea un proyecto Firebase:
 
-Crea un proyecto Firebase en Firebase Console.
-Obten la configuración de Firebase (firebaseConfig) y reemplázala en el archivo firebaseConfig.js ubicado en la carpeta db.
+    Crea un proyecto Firebase en Firebase Console.
+    Obten la configuración de Firebase (firebaseConfig) y reemplázala en el archivo firebaseConfig.js ubicado en la carpeta db.
 
 4. Importa datos de muestra en Firebase Firestore:
 
-Utiliza el archivo seedData.json y migrations.js proporcionados para importar datos de muestra de productos en Firestore. Puedes encontrar instrucciones detalladas en la carpeta migrations.
+    Utiliza el archivo seedData.json y migrations.js proporcionados para importar datos de muestra de productos en Firestore. Puedes encontrar instrucciones detalladas en la carpeta migrations.
 
 5. Inicia el servidor de desarrollo:
 
-bash
-Copy code
-npm start
-# o
-yarn start
+    ```bash
+    Copy code
+    npm start
+    # o
+    yarn start
 
 6. Abre tu navegador y navega a http://localhost:3000 para visualizar la tienda Q'Yerba en tu entorno local.
 
