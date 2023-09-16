@@ -2,13 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
 
 body {
   background-color: rgb(255, 255, 255);
 }
 
 .center-container {
-  position: relative;
+  min-height: 100vh; /* Establecer un alto mínimo igual al 100% del alto de la ventana gráfica */
 }
 
 .titulo {
@@ -48,3 +49,5 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+

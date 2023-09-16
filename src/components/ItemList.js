@@ -1,11 +1,11 @@
 import React from 'react';
-import Item from './Item'; // Asegúrate de tener la ruta correcta para importar tu componente Item
+import Item from './Item'; 
 
 const ItemList = ({ products }) => {
     return (
-        <div className="flex flex-wrap justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {products.map((prod) => (
-                <div key={prod.id} className="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 px-4 ">
+                <div key={prod.id} className="flex justify-center">
                     <Item {...prod} />
                 </div>
             ))}
